@@ -6,9 +6,9 @@ import { FirstApp } from './FirstApp';
 // Importar estilos globales
 import './styles.css';
 
-ReactDOM.createRoot( document.getElementById('root') ).render(
-    <React.StrictMode>
-        {/* Paso de valores a un componente con props */}
-        <FirstApp title='Hola, soy goku' subTitle={ 123 } />
-    </React.StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		{/* Paso de valores a un componente con props */}
+		<FirstApp title='Hola, Soy Goku' subTitle={ 12 } />
+	</React.StrictMode>
 )
