@@ -1,3 +1,5 @@
+// yarn add prop-types
+import PropTypes from 'prop-types';
 
 const newMessage = {
 	message: 'Hola mundo',
@@ -24,7 +26,13 @@ export const FirstApp = ( { title, subTitle } ) => {
     <>
 			<h1>{ title }</h1>
       {/* <code>{ JSON.stringify( newMessage ) }</code> */}
-      <p>{ subTitle + 1 }</p>
+      {/* <p>{ subTitle + 1 }</p> */}
     </>
   );
+}
+
+// Definir el tipo de las propiedades
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.number.isRequired
 }
