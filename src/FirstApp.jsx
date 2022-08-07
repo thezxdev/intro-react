@@ -8,7 +8,11 @@ const getValue = () => {
 	return 'sssss';
 }
 
-export const FirstApp = () => {
+// props = objeto
+
+export const FirstApp = ( { title, subTitle } ) => {
+
+  // console.log( props );
 	
 	// Si no se cambia el valor o si no tiene una relacion con algun hook no se recomienda tener valores dentro de los componentes
 	// const newMessage = 'zxzx';
@@ -18,9 +22,9 @@ export const FirstApp = () => {
 
 
     <>
-			<h1>{ getValue() }</h1>
+			<h1>{ title }</h1>
       {/* <code>{ JSON.stringify( newMessage ) }</code> */}
-      <p>Soy un subtitulo</p>
+      <p>{ subTitle + 1 }</p>
     </>
   );
 }
