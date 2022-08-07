@@ -9,6 +9,6 @@ import './styles.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		{/* Paso de valores a un componente con props */}
-		<FirstApp title='Hola, Soy Goku' subTitle={ 12 } />
+		<FirstApp subTitle={ 12 } />
 	</React.StrictMode>
 )

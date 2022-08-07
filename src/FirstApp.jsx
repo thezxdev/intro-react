@@ -26,7 +26,7 @@ export const FirstApp = ( { title, subTitle } ) => {
     <>
 			<h1>{ title }</h1>
       {/* <code>{ JSON.stringify( newMessage ) }</code> */}
-      {/* <p>{ subTitle + 1 }</p> */}
+      <p>{ subTitle + 1 }</p>
     </>
   );
 }
@@ -35,4 +35,11 @@ export const FirstApp = ( { title, subTitle } ) => {
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.number.isRequired
+}
+
+// Propiedades por defecto
+FirstApp.defaultProps = {
+  title: 'No hay título',
+  subTitle: 'No hay subtitulo',
+  name: 'zxxz',
 }
