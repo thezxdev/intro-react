@@ -13,4 +13,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		{/* <FirstApp subTitle={ 12 } /> */}
 		<CounterApp value={ 3 } />
 	</React.StrictMode>
-)
+);
