@@ -11,6 +11,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		{/* Paso de valores a un componente con props */}
 		{/* <FirstApp subTitle={ 12 } /> */}
-		<CounterApp value={ 3 } />
+		<CounterApp value={ 20 } />
 	</React.StrictMode>
 );
